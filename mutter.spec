@@ -19,8 +19,11 @@ Source0:       http://download.gnome.org/sources/%{name}/3.37/%{name}-%{version}
 # Work-around for OpenJDK's compliance test
 Patch0:        0001-window-actor-Special-case-shaped-Java-windows.patch
 
+# clutter: Paint views with individual frame clocks
+Patch1:        a9a9a0d1c593ee27b449234fd6fbb66e36d5a6ab.diff
+
 # WIP: backend/native: Always perform stage updates at their scheduled time
-Patch1:        1241.diff
+Patch2:        1241.diff
 
 BuildRequires: chrpath
 BuildRequires: pango-devel
